@@ -114,7 +114,6 @@ const tipo = [
 	}
 ];
 
-const icon = ["fa-solid fa-cat","fa-solid fa-crow","fa-solid fa-dog","fa-solid fa-dove","fa-solid fa-dragon","fa-solid fa-horse","fa-solid fa-hippo","fa-solid fa-fish","fa-solid fa-carrot","fa-solid fa-apple-alt","fa-solid fa-lemon","fa-solid fa-pepper-hot","fa-solid fa-user-astronaut","fa-solid fa-user-graduate","fa-solid fa-user-ninja","fa-solid fa-user-secret"]
 
 // Milestone 1
 // Partendo dalla struttura dati fornita, visualizzare in pagina un box per ogni icona, in cui è presente il nome dell'icona e l'icona stessa.
@@ -132,29 +131,18 @@ const icon = ["fa-solid fa-cat","fa-solid fa-crow","fa-solid fa-dog","fa-solid f
 
     mainCard += `
 	   <div class="col-2 mx-5 my-5 box">
-	     <i class="${icon[i]} ${tipo[i].color}"></i>
+	     <i class="fa-solid ${tipo[i].prefix}${tipo[i].name} ${tipo[i].color}"></i>
 		 ${tipo[i].name}
 	   </div>
 	
         `;
-     console.log(`<i class ="${icon[i]} ${tipo[i].color}"></i>`)
+     console.log(`<i class ="${tipo[i].prefix}${tipo[i].name} ${tipo[i].color}"></i>`)
  }
  mainContainer.innerHTML += mainCard  
 console.log(mainCard);
 
 
-
-let opzioni;
-const tipoAnimale = tipo.filter((genere)=> {
-	if(genere.type === 'animal'){
-		opzioni = document.getElementById("opzioni").value = '1';
-	}
-	else if(genere.type === 'vegetable'){
-		opzioni = document.getElementById("opzioni").value = '2';
-    }
-   if(genere.type === 'user'){
-	opzioni = document.getElementById("opzioni").value = '3';
-    }
-}	
-
-
+const x =document.getElementById('opzioni').value
+if(x === '1'){
+	
+}
