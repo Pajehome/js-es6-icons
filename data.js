@@ -141,3 +141,20 @@ const icon = ["fa-solid fa-cat","fa-solid fa-crow","fa-solid fa-dog","fa-solid f
  }
  mainContainer.innerHTML += mainCard  
 console.log(mainCard);
+
+
+
+let opzioni;
+const tipoAnimale = tipo.filter((genere)=> {
+	if(genere.type === 'animal'){
+		opzioni = document.getElementById("opzioni").value = '1';
+	}
+	else if(genere.type === 'vegetable'){
+		opzioni = document.getElementById("opzioni").value = '2';
+    }
+   if(genere.type === 'user'){
+	opzioni = document.getElementById("opzioni").value = '3';
+    }
+}	
+
+
