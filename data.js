@@ -132,13 +132,12 @@ const tipo = [
      console.log(`<i class ="${tipo[i].prefix}${tipo[i].name} ${tipo[i].color}"></i>`)
  }
  mainContainer.innerHTML += mainCard  
-console.log(mainCard);
+ console.log(mainCard);
 
 
-const opzioni = document.getElementById('opzioni').value
-opzioni.addEventListener('change',select)
-
-function select(){
+ const opzioni = document.getElementById('opzioni').value
+ opzioni.addEventListener('change',function(){
+	
 	if(opzioni === '1'){
 		let tipoAnimale = tipo.filter((genere) => genere.type === 'animal')
 	}
@@ -148,8 +147,22 @@ function select(){
 	else if(opzioni === '3'){
 		let tipoUser = tipo.filter((genere) => genere.type === 'user')
 	}
-}
+ })
 
+// function select(){
+// 	const opzioni = document.getElementById('opzioni').value
+// 	opzioni.addEventListener('change',select)
+// 	if(opzioni === '1'){
+// 		let tipoAnimale = tipo.filter((genere) => genere.type === 'animal')
+// 	}
+// 	else if(opzioni === '2'){
+// 		let tipoVegetale = tipo.filter((genere) => genere.type === 'vegetable')
+// 	}
+// 	else if(opzioni === '3'){
+// 		let tipoUser = tipo.filter((genere) => genere.type === 'user')
+// 	}
+// }
+// select()
 
 
 
