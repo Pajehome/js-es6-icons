@@ -135,8 +135,13 @@ const tipo = [
  console.log(mainCard);
 
 
- const opzioni = document.getElementById('opzioni').value
- opzioni.addEventListener('change',function(){
+
+
+const select = document.getElementById('opzioni')
+
+ select.addEventListener('change', function(){
+	const opzioni = select.value 
+	console.log(opzioni)
 	
 	if(opzioni === '1'){
 		let tipoAnimale = tipo.filter((genere) => genere.type === 'animal')
@@ -148,21 +153,4 @@ const tipo = [
 		let tipoUser = tipo.filter((genere) => genere.type === 'user')
 	}
  })
-
-// function select(){
-// 	const opzioni = document.getElementById('opzioni').value
-// 	opzioni.addEventListener('change',select)
-// 	if(opzioni === '1'){
-// 		let tipoAnimale = tipo.filter((genere) => genere.type === 'animal')
-// 	}
-// 	else if(opzioni === '2'){
-// 		let tipoVegetale = tipo.filter((genere) => genere.type === 'vegetable')
-// 	}
-// 	else if(opzioni === '3'){
-// 		let tipoUser = tipo.filter((genere) => genere.type === 'user')
-// 	}
-// }
-// select()
-
-
 
