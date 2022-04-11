@@ -136,13 +136,20 @@ console.log(mainCard);
 
 
 const opzioni = document.getElementById('opzioni').value
+opzioni.addEventListener('change',select)
 
-if(opzioni === '1'){
-	let tipoAnimale = tipo.filter((genere) => genere.type === 'animal')
+function select(){
+	if(opzioni === '1'){
+		let tipoAnimale = tipo.filter((genere) => genere.type === 'animal')
+	}
+	else if(opzioni === '2'){
+		let tipoVegetale = tipo.filter((genere) => genere.type === 'vegetable')
+	}
+	else if(opzioni === '3'){
+		let tipoUser = tipo.filter((genere) => genere.type === 'user')
+	}
 }
-else if(opzioni === '2'){
-	let tipoVegetale = tipo.filter((genere) => genere.type === 'vegetable')
-}
-else if(opzioni === '3'){
-	let tipoUser = tipo.filter((genere) => genere.type === 'user')
-}
+
+
+
+
