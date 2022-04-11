@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 50px;
+    background-color: blue;
+    position: relative;
+}
+#opzioni{
+    position: absolute;
+    left: 43%;
+    top: 12px;
+}
+.container-fluid{
+    height: calc(100vh - 50px);
+}
+.size{
+    width: 50px;
+    height:30px;
+    background-color:blue;
+}
+.box{
+    height: 80px;
+    width: 120px;
+    border: 1px solid black;
+    text-align: center;
+}
+.fa-solid{
+    font-size: 40px;
+}
+.orange{
+    color:orange;
+}
+.green{
+    color:green;
+}
+.blue{
+    color:blue;
+}
